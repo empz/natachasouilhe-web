@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+/* html,
+body {
+  font-family: "Roboto Slab", serif;
+  color: #404b5a
+} */
+
+body {
+  @apply font-serif m-auto text-gray-900;
+  max-width: 1440px;
+}
+
+.hero-container {
+  height: 970px;
+  background: url("/images/hero_banner_desktop.png") center;
+}
