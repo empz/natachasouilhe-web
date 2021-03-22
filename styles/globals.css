@@ -6,19 +6,102 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
-
-/* html,
-body {
-  font-family: "Roboto Slab", serif;
-  color: #404b5a
-} */
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 
 body {
   @apply font-serif m-auto text-gray-900;
-  max-width: 1440px;
 }
 
 .hero-container {
-  height: 970px;
-  background: url("/images/hero_banner_desktop.png") center;
+  height: 100vh;
+  background: url("/images/hero_banner_web.png") no-repeat center top;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    background: url("/images/hero_banner_mobile.png") no-repeat center top;
+  }
+}
+
+/* Treaments > Cards */
+.treatment-card {
+  width: 334px;
+}
+
+@media (min-width: 1440) {
+  .treatment-card {
+    width: 285px;
+  }
+}
+
+/**
+* ----------------------------------------------
+* FAQ accordion styles
+* ----------------------------------------------
+**/
+.accordion {
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+  /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.accordion__item {
+  @apply my-5;
+}
+
+.accordion__button {
+  @apply bg-basic-50 text-brown-600 font-sans rounded text-lg font-bold hover:bg-basic-100;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+}
+
+.accordion__button:focus {
+  outline: none;
+}
+
+.accordion__button:before {
+  display: inline-block;
+  content: "";
+  height: 10px;
+  width: 10px;
+  margin-right: 12px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded="true"]::before,
+.accordion__button[aria-selected="true"]::before {
+  transform: rotate(45deg);
+}
+
+[hidden] {
+  display: none;
+}
+
+.accordion__panel {
+  @apply bg-basic-50 text-brown-600 text-left;
+  padding: 20px;
+  animation: fadein 0.35s ease-in;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

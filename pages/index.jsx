@@ -13,8 +13,8 @@ import Treatments from "../components/sections/treatments/Treatments";
 import Card from "../components/sections/treatments/Card";
 import Diseases from "../components/sections/Diseases";
 import Testimonials from "../components/sections/Testimonials";
-import FAQ from "../components/sections/FAQ";
-import Contact from "../components/sections/Contact";
+import { FAQ } from "../components/sections/FAQ";
+import { Contact } from "../components/sections/Contact";
 import Image from "next/image";
 
 const Homepage = () => {
@@ -68,10 +68,11 @@ const Homepage = () => {
           imageUrl="/images/treatments/kinesiotape.jpg"
         />
       </Treatments>
-      <Diseases></Diseases>
-      <Testimonials></Testimonials>
-      <FAQ></FAQ>
-      <Contact></Contact>
+      <Diseases />
+      <Testimonials />
+      <FAQ />
+      <Contact />
+      <Footer />
     </>
   );
 };

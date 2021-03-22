@@ -17,7 +17,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="flex flex-row items-center text-gray-800 font-semibold p-2 pl-4">
+    <div className="fixed w-full z-50 bg-white flex flex-row items-center text-gray-800 font-semibold p-2 pl-4">
       {/* <Image src="/images/logo.png" layout="fill" alt="Logo" /> */}
       <img src="/images/logo.png" alt="Logo" style={{ height: "44px" }} />
       <h1

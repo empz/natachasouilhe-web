@@ -9,9 +9,12 @@
     "start": "next start -p ${PORT:=3000}"
   },
   "dependencies": {
+    "@formspark/use-formspark": "^0.1.25",
     "next": "^10.0.5",
     "next-i18next": "^8.1.2",
     "react": "^17.0.1",
+    "react-accessible-accordion": "^3.3.4",
+    "react-card-flip": "^1.1.0",
     "react-dom": "^17.0.1",
     "react-scroll": "^1.8.2"
   },

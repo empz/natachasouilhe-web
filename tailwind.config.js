@@ -15,25 +15,26 @@ module.exports = {
       sans: ["Mukta", "sans-serif"],
       lato: ["Lato", "sans-serif"],
       cursive: ["Handlee", "cursive"],
+      signature: ["Yellowtail", "cursive"],
     },
     extend: {
       colors: {
-        "primary-50": "#D1CFBF",
-        "primary-100": "#C0BDA6",
-        "primary-200": "#AFAC8E",
+        "primary-50": "#E3E1D7",
+        "primary-100": "#D1CFBF",
+        "primary-200": "#C0BDA6",
         "primary-300": "#AFAC8E",
-        "primary-400": "#756B4E",
+        "primary-400": "#9E9A76",
         "primary-500": "#8D885E",
-        "primary-600": "#5D513E",
-        "primary-700": "#9E9A76",
-        "primary-800": "#8D885E",
+        "primary-600": "#817956",
+        "primary-700": "#756B4E",
+        "primary-800": "#695E46",
         "primary-900": "#5D513E",
 
         "secondary-50": "#EADAD3",
-        "secondary-100": "#D1AE9F",
-        "secondary-200": "#C59885",
-        "secondary-300": "#B8826A",
-        "secondary-400": "#EADAD3",
+        "secondary-100": "#DEC4B9",
+        "secondary-200": "#D1AE9F",
+        "secondary-300": "#C59885",
+        "secondary-400": "#B8826A",
         "secondary-500": "#AC6C50",
         "secondary-600": "#9D5D49",
         "secondary-700": "#8F4F42",
@@ -42,20 +43,34 @@ module.exports = {
       },
 
       textColor: {
-        "bluegray-700": "#3E474D",
+        "bluegray-100": "#D9DBE1",
+        "bluegray-400": "#8999A9",
+        "bluegray-500": "#6E7F91",
+        "bluegray-800": "#3E474D",
 
         "brown-400": "#8F837C",
+        "brown-600": "#77675F",
         "brown-800": "#3E372A",
+
+        "basic-800": "#404B5A",
       },
 
       backgroundColor: {
         "basic-50": "#faf3ed",
         "basic-100": "#F9EDDD",
+        "blue-900": "#0B0D17",
+        "primary-500": "#8D885E",
+      },
+
+      scale: {
+        "-1": "-1",
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ["active"],
+    },
   },
   plugins: [],
 };
