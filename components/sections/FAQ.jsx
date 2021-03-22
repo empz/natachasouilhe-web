@@ -7,9 +7,9 @@ import {
 } from "react-accessible-accordion";
 
 export const FAQ = () => (
-  <section className="px-5 pb-10 md:px-10">
-    <div className="pt-20 text-center">
-      <h2 className="text-secondary-500 text-3xl font-bold mb-16">
+  <section className="px-5 py-20 md:px-10">
+    <div className="text-center max-w-screen-xl mx-auto">
+      <h2 className="text-secondary-500 text-3xl font-bold mb-10">
         Preguntas Frecuentes
       </h2>
 

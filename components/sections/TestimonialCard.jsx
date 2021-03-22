@@ -1,6 +1,6 @@
 export const TestimonialCard = ({ pictureUrl, name, children }) => {
   return (
-    <div className="bg-white w-full rounded-xl relative my-10 shadow-lg">
+    <div className="bg-white w-full rounded-xl relative my-10 shadow-lg lg:w-1/3 lg:mx-3">
       <img
         className={`
           shadow-lg block m-auto absolute 

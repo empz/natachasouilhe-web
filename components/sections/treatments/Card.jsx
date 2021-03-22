@@ -6,15 +6,18 @@ const Card = ({ title, description, imageUrl }) => {
 
   return (
     <div
-      className="m-3 w-full h-48 2xl:w-72 treatment-card"
+      className={`w-96 h-48 mx-auto my-3
+        md:w-80 md:mx-3
+        xl:w-72`}
+      style={{ maxWidth: "375px" }}
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
     >
       <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
         <div
-          className="shadow flex flex-col h-48 rounded-lg"
+          className="shadow flex flex-col h-48 rounded-lg bg-cover"
           style={{
-            background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 9.9%, rgba(12, 16, 31, 0.63) 80.21%), url(${imageUrl}) center`,
+            background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 9.9%, rgba(12, 16, 31, 0.63) 80.21%), url(${imageUrl}) no-repeat center`,
           }}
         >
           <div className="mt-auto mb-6">

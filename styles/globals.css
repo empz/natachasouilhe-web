@@ -25,7 +25,7 @@ body {
 }
 
 /* Treaments > Cards */
-.treatment-card {
+/* .treatment-card {
   width: 334px;
 }
 
@@ -33,7 +33,7 @@ body {
   .treatment-card {
     width: 285px;
   }
-}
+} */
 
 /**
 * ----------------------------------------------
@@ -42,6 +42,7 @@ body {
 **/
 .accordion {
   /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  @apply flex flex-row flex-wrap justify-center;
   border-radius: 2px;
 }
 
@@ -50,7 +51,15 @@ body {
 }
 
 .accordion__item {
-  @apply my-5;
+  @apply my-5 w-full;
+}
+
+@media (min-width: 1280px) {
+  .accordion__item {
+    width: 494px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 .accordion__button {

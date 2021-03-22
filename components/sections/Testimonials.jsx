@@ -2,12 +2,12 @@ import { TestimonialCard } from "./TestimonialCard";
 
 const Testimonials = () => (
   <section id="testimonials" className="bg-basic-50 px-5 pb-10 md:px-10">
-    <div className="pt-20 text-center">
+    <div className="pt-20 text-center max-w-screen-xl mx-auto">
       <h2 className="text-secondary-500 text-4xl font-bold mb-16">
         Testimonios
       </h2>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col lg:flex-row">
         <TestimonialCard pictureUrl="images/Tomas-C.jpg" name="Tomas C">
           Excelente profesional, la Lic. Souilhe me trató en varias
           oportunidades. Logró curarme los esguinces crónicos que tenía en los
