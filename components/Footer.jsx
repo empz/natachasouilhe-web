@@ -39,12 +39,16 @@ export const Footer = () => {
               alt="Whatsapp icon"
               className="inline-block mr-2"
             />
-            <a target="_blank" href="https://wa.me/+34648903162">
+            <a target="_blank" rel="noopener" href="https://wa.me/+34648903162">
               +34 648 903 162
             </a>
           </li>
           <li className="space-x-4">
-            <a target="_blank" href="https://instagram.com/natachasouilhe">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://instagram.com/natachasouilhe"
+            >
               <img
                 className="inline-block"
                 src="images/instagram_icon.svg"
@@ -53,6 +57,7 @@ export const Footer = () => {
             </a>
             <a
               target="_blank"
+              rel="noopener"
               href="https://www.linkedin.com/in/natacha-souilhe"
             >
               <img
