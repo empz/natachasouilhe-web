@@ -4,6 +4,7 @@ const Diseases = () => (
     style={{
       background:
         "url(images/afecciones-background_treated_02.jpg) no-repeat center center",
+      backgroundSize: "cover",
     }}
     id="diseases"
   >
