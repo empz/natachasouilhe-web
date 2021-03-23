@@ -14,8 +14,6 @@ import { Testimonials } from "../components/sections/Testimonials";
 import { FAQ } from "../components/sections/FAQ";
 import { Contact } from "../components/sections/Contact";
 
-const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
-
 const Homepage = () => {
   const { t } = useTranslation("common");
 
@@ -109,7 +107,7 @@ const Homepage = () => {
             async
             defer
             data-domain="natachasouilhe.com"
-            src="https://plausible.io/js/plausible.js"
+            src="https://plausible.io/js/plausible.outbound-links.js"
           ></script>
         )}
       </Head>
