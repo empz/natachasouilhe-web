@@ -14,6 +14,8 @@ import { Testimonials } from "../components/sections/Testimonials";
 import { FAQ } from "../components/sections/FAQ";
 import { Contact } from "../components/sections/Contact";
 
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
+
 const Homepage = () => {
   const { t } = useTranslation("common");
 
@@ -47,7 +49,7 @@ const Homepage = () => {
           <>
             <script
               async
-              src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GA_TRACKING_ID}`}
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
             />
             <script
               dangerouslySetInnerHTML={{
@@ -55,7 +57,7 @@ const Homepage = () => {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '${NEXT_PUBLIC_GA_TRACKING_ID}', {
+                gtag('config', '${GA_TRACKING_ID}', {
                   page_path: window.location.pathname,
                 });
             `,
