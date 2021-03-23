@@ -15,6 +15,7 @@
     "react": "^17.0.1",
     "react-accessible-accordion": "^3.3.4",
     "react-card-flip": "^1.1.0",
+    "react-cloudimage-responsive": "^3.3.2",
     "react-dom": "^17.0.1",
     "react-scroll": "^1.8.2"
   },

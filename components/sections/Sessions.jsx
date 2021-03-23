@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Img from "react-cloudimage-responsive";
 
 export const Sessions = () => (
   <section id="sessions">
@@ -23,11 +23,10 @@ export const Sessions = () => (
           </p>
         </div>
       </div>
-      <div className="lg:w-1/2">
-        <img
-          className="h-52 md:h-80 w-full object-cover"
-          src="/images/acupuntura_BIG.jpg"
-          layout="fill"
+      <div className="h-52 md:h-80 w-full lg:w-1/2">
+        <Img
+          src="acupuntura_BIG.jpg"
+          params="func=crop&gravity=auto"
           alt="Agujas de acupuntura"
         />
       </div>
@@ -58,12 +57,11 @@ export const Sessions = () => (
           </p>
         </div>
       </div>
-      <div className="lg:w-1/2">
-        <img
-          className="h-52 md:h-80 w-full object-cover"
-          src="/images/terapia-manual_BIG.jpg"
-          layout="fill"
-          alt="Agujas de acupuntura"
+      <div className="h-52 md:h-80 w-full lg:w-1/2">
+        <Img
+          src="terapia-manual_BIG.jpg"
+          params="func=crop&gravity=auto"
+          alt="Terapia manual"
         />
       </div>
     </div>

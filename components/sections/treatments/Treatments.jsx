@@ -5,9 +5,6 @@ export const Treatments = ({ children }) => (
   >
     <h2 className="text-secondary-500 text-4xl font-bold mb-3">Tratamientos</h2>
 
-    {/* <div className="flex flex-col justify-center content-evenly items-center pt-5 pb-12 md:flex-row md:flex-wrap">
-      {children}
-    </div> */}
     <div
       className={`mx-auto justify-items-center justify-center pt-5 pb-12 
       md:flex md:flex-row md:flex-wrap md:max-w-3xl

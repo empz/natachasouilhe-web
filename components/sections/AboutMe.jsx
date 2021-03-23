@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import Img from "react-cloudimage-responsive";
+
 export const AboutMe = () => (
   <section className="bg-basic-50" id="about">
     <div className="flex flex-col flex-wrap max-w-6xl mx-auto md:flex-row md:items-center">
@@ -20,13 +22,7 @@ export const AboutMe = () => (
         </p>
       </div>
       <div className="flex-1 text-center w-9/12 mx-auto flex flex-col items-end md:ml-10 md:self-end">
-        <Image
-          src="/images/acerca-de-mi.png"
-          alt="Natacha Souilhe"
-          width={566}
-          height={518}
-          layout="intrinsic"
-        />
+        <Img src="acerca-de-mi.png" />
       </div>
     </div>
   </section>
