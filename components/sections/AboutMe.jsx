@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const AboutMe = () => (
+export const AboutMe = () => (
   <section className="bg-basic-50" id="about">
     <div className="flex flex-col flex-wrap max-w-6xl mx-auto md:flex-row md:items-center">
       <div className="flex-1 self-center p-8 md:p-10">
@@ -31,5 +31,3 @@ const AboutMe = () => (
     </div>
   </section>
 );
-
-export default AboutMe;

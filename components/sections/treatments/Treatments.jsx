@@ -1,4 +1,4 @@
-const Treatments = ({ children }) => (
+export const Treatments = ({ children }) => (
   <section
     id="treatments"
     className="py-16 text-center max-w-7xl m-auto md:py-20"
@@ -8,7 +8,8 @@ const Treatments = ({ children }) => (
     {/* <div className="flex flex-col justify-center content-evenly items-center pt-5 pb-12 md:flex-row md:flex-wrap">
       {children}
     </div> */}
-    <div className={`mx-auto justify-items-center justify-center pt-5 pb-12 
+    <div
+      className={`mx-auto justify-items-center justify-center pt-5 pb-12 
       md:flex md:flex-row md:flex-wrap md:max-w-3xl
       xl:grid-cols-4 xl:max-w-screen-2xl`}
     >
@@ -16,5 +17,3 @@ const Treatments = ({ children }) => (
     </div>
   </section>
 );
-
-export default Treatments;

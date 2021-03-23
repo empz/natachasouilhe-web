@@ -1,4 +1,4 @@
-const Diseases = () => (
+export const Diseases = () => (
   <section
     className="py-16 px-7 text-center md:px-10"
     style={{
@@ -41,4 +41,3 @@ const Diseases = () => (
   </section>
 );
 
-export default Diseases;

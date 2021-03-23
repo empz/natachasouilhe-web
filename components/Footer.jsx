@@ -1,4 +1,11 @@
+import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
+
+import sections from "../data/sections.json";
+
 export const Footer = () => {
+  const { t } = useTranslation("navbar");
+
   return (
     <footer className="bg-blue-900 py-11 px-5 text-white">
       <div className="flex flex-col space-y-5 lg:flex-row lg:justify-between lg:space-y-0 lg:pb-10">
@@ -12,14 +19,19 @@ export const Footer = () => {
         </div>
         <div className="lg:w-2/4">
           <ul className="tracking-wider space-y-4 text-center lg:flex lg:flex-row lg:flex-wrap lg:space-y-0">
-            <li className="lg:w-1/2 lg:py-2">Acerca de mi</li>
-            <li className="lg:w-1/2 lg:py-2">Sesiones</li>
-            <li className="lg:w-1/2 lg:py-2">Tratamientos</li>
-            <li className="lg:w-1/2 lg:py-2">Afecciones</li>
-            <li className="lg:w-1/2 lg:py-2">Preguntas frecuentes</li>
-            <li className="lg:w-1/2 lg:py-2">Testimonios</li>
-            <li className="lg:w-1/2 lg:py-2">Tratamientos</li>
-            <li className="lg:w-1/2 lg:py-2">Contacto</li>
+            {sections.map((section) => (
+              <li key={section} className="lg:w-1/2 lg:py-2">
+                <Link
+                  to={section}
+                  className="cursor-pointer hover:text-secondary-500"
+                  smooth={true}
+                  duration={300}
+                  offset={-40}
+                >
+                  {t(section)}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="py-5 lg:w-1/4 lg:py-0">
@@ -30,7 +42,10 @@ export const Footer = () => {
                 alt="Email icon"
                 className="inline-block mr-2"
               />
-              <a className="underline" href="mailto:souilhenatacha@gmail.com">
+              <a
+                className="hover:underline"
+                href="mailto:souilhenatacha@gmail.com"
+              >
                 souilhenatacha@gmail.com
               </a>
             </li>
@@ -41,7 +56,7 @@ export const Footer = () => {
                 className="inline-block mr-2"
               />
               <a
-                className="underline"
+                className="hover:underline"
                 target="_blank"
                 rel="noopener"
                 href="https://wa.me/+34648903162"
@@ -56,7 +71,7 @@ export const Footer = () => {
                 href="https://instagram.com/natachasouilhe"
               >
                 <img
-                  className="inline-block"
+                  className="inline-block transform hover:scale-110"
                   src="images/instagram_icon.svg"
                   alt="Instagram icon"
                 />
@@ -67,7 +82,7 @@ export const Footer = () => {
                 href="https://www.linkedin.com/in/natacha-souilhe"
               >
                 <img
-                  className="inline-block"
+                  className="inline-block transform hover:scale-110"
                   src="images/linkedin_icon.svg"
                   alt="LinkedIn icon"
                 />

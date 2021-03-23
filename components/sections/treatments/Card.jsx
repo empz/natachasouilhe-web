@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 
-const Card = ({ title, description, imageUrl }) => {
+export const Card = ({ title, description, imageUrl }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
@@ -45,5 +45,3 @@ const Card = ({ title, description, imageUrl }) => {
     </div>
   );
 };
-
-export default Card;

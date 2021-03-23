@@ -2,22 +2,12 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 import { useToggle } from "../hooks/use-toggle";
+import sections from "../data/sections.json";
 
 export const Navbar = () => {
   const { t } = useTranslation("navbar");
 
   const [mobileMenuExpanded, toggleMobileMenuExpanded] = useToggle();
-
-  const items = [
-    "home",
-    "about",
-    "sessions",
-    "treatments",
-    "diseases",
-    "testimonials",
-    "faq",
-    "contact",
-  ];
 
   return (
     <div className="fixed z-50 flex flex-row flex-wrap justify-between w-full items-center bg-white text-gray-800 font-semibold p-2 pl-4">
@@ -38,10 +28,17 @@ export const Navbar = () => {
         </Link>
         <div
           id="hamburgerbtn"
-          class="cursor-pointer xl:hidden"
+          className="cursor-pointer xl:hidden"
           onClick={toggleMobileMenuExpanded}
         >
-          🍔
+          <img
+            src={`images/${
+              mobileMenuExpanded
+                ? "navbar_menu_close_btn"
+                : "navbar_menu_button"
+            }.svg`}
+            alt="Menu expand/collapse button"
+          />
         </div>
       </div>
       <nav
@@ -52,22 +49,23 @@ export const Navbar = () => {
         <ul
           className={`${
             mobileMenuExpanded ? "block" : "hidden"
-          } justify-items-stretch justify-end mx-auto
+          } justify-items-stretch justify-end mx-auto text-center tracking-wider
             xl:flex xl:flex-row`}
         >
-          {items.map((i) => (
-            <li key={i} className="p-2">
+          {sections.map((link) => (
+            <li key={link} className="p-2">
               <Link
-                to={i}
+                to={link}
                 className="cursor-pointer hover:text-secondary-500"
                 activeClass="text-secondary-500"
                 spy={true}
+                hashSpy={false}
                 smooth={true}
                 duration={300}
-                offset={-30}
+                offset={-40}
                 onClick={toggleMobileMenuExpanded}
               >
-                {t(i)}
+                {t(link)}
               </Link>
             </li>
           ))}

@@ -1,6 +1,6 @@
 import { TestimonialCard } from "./TestimonialCard";
 
-const Testimonials = () => (
+export const Testimonials = () => (
   <section id="testimonials" className="bg-basic-50 px-5 pb-10 md:px-10">
     <div className="pt-20 text-center max-w-screen-xl mx-auto">
       <h2 className="text-secondary-500 text-4xl font-bold mb-16">
@@ -30,5 +30,3 @@ const Testimonials = () => (
     </div>
   </section>
 );
-
-export default Testimonials;
