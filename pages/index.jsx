@@ -29,42 +29,42 @@ const Homepage = () => {
       <Treatments>
         <Card
           title="Acupuntura"
-          description="Técnica destinada a restablecer la bioelectricidad del cuerpo."
+          description="Técnica destinada a restablecer la bioelectricidad del cuerpo"
           imageUrl="/images/treatments/acupuntura.jpg"
         />
         <Card
           title="Punción seca"
-          description="Técnica destinada a restablecer la bioelectricidad del cuerpo."
+          description="Método destinado a la desactivación de puntos gatillo miofasciales"
           imageUrl="/images/treatments/puncion-seca.jpg"
         />
         <Card
           title="Terapia manual"
-          description="Técnica destinada a restablecer la bioelectricidad del cuerpo."
+          description="Masajes y técnicas utilizadas para disfunciones neuro-músculo-esqueléticas"
           imageUrl="/images/treatments/terapia-manual.jpg"
         />
         <Card
-          title="Auriculoterapia"
-          description="Técnica destinada a restablecer la bioelectricidad del cuerpo."
-          imageUrl="/images/treatments/auriculoterapia.jpg"
-        />
-        <Card
           title="Ventosas"
-          description="Técnica destinada a restablecer la bioelectricidad del cuerpo."
+          description="Técnica orientada a la liberación miofascial"
           imageUrl="/images/treatments/ventosas.jpg"
         />
         <Card
+          title="Auriculoterapia"
+          description='Tratamiento global desde una zona refleja "la oreja"'
+          imageUrl="/images/treatments/auriculoterapia.jpg"
+        />
+        <Card
           title="Fitoterapia"
-          description="Técnica destinada a restablecer la bioelectricidad del cuerpo."
+          description="Ciencia que estudia la utilización de productos de origen vegetal con finalidad terapéutica"
           imageUrl="/images/treatments/fitoterapia.jpg"
         />
         <Card
           title="Moxibustión"
-          description="Técnica destinada a restablecer la bioelectricidad del cuerpo."
+          description="Método terapéutico de la medicina tradicional china que consiste en aplicar calor en puntos acupunturales"
           imageUrl="/images/treatments/moxibustion.jpg"
         />
         <Card
           title="Kinesiotape"
-          description="Técnica destinada a restablecer la bioelectricidad del cuerpo."
+          description="Técnica que aporta estabilidad dinámica al sistema mio-articular"
           imageUrl="/images/treatments/kinesiotape.jpg"
         />
       </Treatments>

@@ -21,10 +21,10 @@ const Testimonials = () => (
           normal y a mis entrenamientos deportivos.
         </TestimonialCard>
         <TestimonialCard pictureUrl="images/Martyna-M.jpg" name="Martyna M">
-          Excelente profesional, la Lic. Souilhe me trató en varias
-          oportunidades. Logró curarme los esguinces crónicos que tenía en los
-          dos tobillos, por lesiones de fútbol. También me realice algunas
-          sesiones de acupuntura, las cuales dieron increíbles resultados.
+          Muy profesional, agradable, con mucha paciencia. Se fija mucho en las
+          necesidades y bienestar del paciente. Tiene mucho conocimiento,
+          experiencia y aunque no lo parezca tiene mucha fuerza con las
+          contracturas viejas. ¡Es muy útil!
         </TestimonialCard>
       </div>
     </div>

@@ -9,7 +9,7 @@ const Card = ({ title, description, imageUrl }) => {
       className={`w-96 h-48 mx-auto my-3
         md:w-80 md:mx-3
         xl:w-72`}
-      style={{ maxWidth: "375px" }}
+      style={{ maxWidth: "355px" }}
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
     >
@@ -32,11 +32,11 @@ const Card = ({ title, description, imageUrl }) => {
           </div>
         </div>
 
-        <div className="shadow bg-primary-500 flex flex-row flex-wrap items-center mt-auto h-48 rounded-lg text-white ">
+        <div className="shadow bg-primary-500 flex flex-col justify-between p-6 items-center mt-auto h-48 rounded-lg text-white ">
           <div className="mx-auto font-bold text-white text-lg tracking-widest">
             {title}
           </div>
-          <div className="px-5 font-sans">{description}</div>
+          <div className="font-sans">{description}</div>
           <div className="mx-auto">
             <img src="images/arrow-up.svg" alt="Arrow up" />
           </div>
