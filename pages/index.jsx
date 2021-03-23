@@ -25,6 +25,10 @@ const Homepage = () => {
         <title>
           Natacha Souilhe: Fisioterapia y Medicina Tradicional China
         </title>
+        <meta
+          name="description"
+          content="Fisioterapeuta especializada en Medicina Tradicional China. Palma de Mallorca, España."
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
