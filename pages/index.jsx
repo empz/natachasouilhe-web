@@ -25,10 +25,9 @@ const Homepage = () => {
         </title>
         <meta
           name="description"
-          content="Fisioterapeuta especializada en Medicina Tradicional China. Palma de Mallorca, España.
-          Tratamientos: Acupuntura, punción seca, terapia manual, masajes, ventosas, auriculoterapia, fitoterapia, moxibustión, kinesiotape.
-          Afecciones: insomnio, ansiedad y manejo del estres, enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, hormigueo y pérdida de sensación, tratamientos para fertilidad, terapia del dolor."
+          content="Tratamientos para el insomnio, ansiedad, estrés, dolores y enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, fertilidad."
         />
+
         <link
           rel="apple-touch-icon"
           sizes="57x57"
@@ -103,16 +102,21 @@ const Homepage = () => {
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
 
-        <meta
-          property="og:title"
-          content="Natacha Souilhe: Fisioterapia y Medicina Tradicional China"
-        />
-        <meta property="og:type" content="website" />
+        {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://natachasouilhe.com/" />
-        <meta
-          property="og:image"
-          content="https://ajplwsumyq.cloudimg.io/v7/https://natachasouilhe.com/images/acerca-de-mi.png?w=512"
-        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Natacha Souilhe: Fisioterapia y Medicina Tradicional China" />
+        <meta property="og:description" content="Tratamientos para el insomnio, ansiedad, estrés, dolores y enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, fertilidad." />
+        <meta property="og:image" content="https://ajplwsumyq.cloudimg.io/v7/https://natachasouilhe.com/images/acerca-de-mi.png?w=512" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="natachasouilhe.com" />
+        <meta property="twitter:url" content="https://natachasouilhe.com/" />
+        <meta name="twitter:title" content="Natacha Souilhe: Fisioterapia y Medicina Tradicional China" />
+        <meta name="twitter:description" content="Tratamientos para el insomnio, ansiedad, estrés, dolores y enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, fertilidad." />
+        <meta name="twitter:image" content="https://ajplwsumyq.cloudimg.io/v7/https://natachasouilhe.com/images/acerca-de-mi.png?w=512" />
+
 
         {/* Plausible Analytics */}
         {process.env.NODE_ENV === "production" && (
