@@ -8,19 +8,19 @@ export const Testimonials = () => (
       </h2>
 
       <div className="flex flex-col lg:flex-row">
-        <TestimonialCard pictureUrl="Tomas-C.jpg" name="Tomas C">
+        <TestimonialCard pictureUrl="/images/Tomas-C.jpg" name="Tomas C">
           Excelente profesional, la Lic. Souilhe me trató en varias
           oportunidades. Logró curarme los esguinces crónicos que tenía en los
           dos tobillos, por lesiones de fútbol. También me realicé algunas
           sesiones de acupuntura, las cuales dieron increíbles resultados.
         </TestimonialCard>
-        <TestimonialCard pictureUrl="Sebastian-P.jpg" name="Sebastian P">
+        <TestimonialCard pictureUrl="/images/Sebastian-P.jpg" name="Sebastian P">
           Visité a la Fisioterapeuta porque tenía dolores de espalda. Me aplicó
           varias técnicas de fisioterapia, masajes, etc. y después de un par de
           sesiones, comence a vislumbrar una rápida mejoría. He vuelto a mi vida
           normal y a mis entrenamientos deportivos.
         </TestimonialCard>
-        <TestimonialCard pictureUrl="Martyna-M.jpg" name="Martyna M">
+        <TestimonialCard pictureUrl="/images/Martyna-M.jpg" name="Martyna M">
           Muy profesional, agradable, con mucha paciencia. Se fija mucho en las
           necesidades y bienestar del paciente. Tiene mucho conocimiento,
           experiencia y aunque no lo parezca tiene mucha fuerza con las

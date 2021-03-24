@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import { BackgroundImg } from "react-cloudimage-responsive";
+import Image from "next/image";
 
 export const Card = ({ title, description, imageUrl }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -15,14 +15,23 @@ export const Card = ({ title, description, imageUrl }) => {
       onMouseLeave={() => setIsFlipped(false)}
     >
       <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
-        <BackgroundImg
-          src={imageUrl}
-          params="q=100"
-          className="shadow rounded-lg"
-          style={{ background: "no-repeat center" }}
-        >
+        <div className="relative">
           <div
-            className="flex flex-col h-48 rounded-lg bg-cover"
+            className="bg-black rounded-lg bg-opacity-75 w-full h-full fixed overflow-hidden"
+            style={{
+              zIndex: -1,
+            }}
+          >
+            <Image
+              src={imageUrl}
+              alt={title}
+              width="375px"
+              height="250px"
+              objectFit="cover"
+            />
+          </div>
+          <div
+            className="flex flex-col h-48 bg-cover rounded-lg"
             style={{
               background: `linear-gradient(180deg, rgba(0, 0, 0, 0) 9.9%, rgba(12, 16, 31, 0.63) 80.21%)`,
             }}
@@ -38,7 +47,7 @@ export const Card = ({ title, description, imageUrl }) => {
               />
             </div>
           </div>
-        </BackgroundImg>
+        </div>
 
         <div className="shadow bg-primary-500 flex flex-col justify-between p-6 items-center mt-auto h-48 rounded-lg text-white ">
           <div className="mx-auto font-bold text-white text-lg tracking-widest">

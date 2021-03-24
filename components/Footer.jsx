@@ -40,20 +40,20 @@ export const Footer = () => {
               <img
                 src="images/email_icon.svg"
                 alt="Email icon"
-                className="inline-block mr-2"
+                className="inline-block mr-2 align-bottom"
               />
               <a
                 className="hover:underline"
-                href="mailto:souilhenatacha@gmail.com"
+                href="mailto:hola@natachasouilhe.com"
               >
-                souilhenatacha@gmail.com
+                hola@natachasouilhe.com
               </a>
             </li>
             <li>
               <img
                 src="images/whatsapp_icon.svg"
                 alt="Whatsapp icon"
-                className="inline-block mr-2"
+                className="inline-block mr-2 align-bottom"
               />
               <a
                 className="hover:underline"

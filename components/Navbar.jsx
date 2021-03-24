@@ -27,7 +27,7 @@ export const Navbar = () => {
         </Link>
         <div
           id="hamburgerbtn"
-          className="cursor-pointer xl:hidden"
+          className="cursor-pointer mr-2 xl:hidden"
           onClick={toggleMobileMenuExpanded}
         >
           <img

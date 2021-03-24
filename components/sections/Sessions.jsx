@@ -1,7 +1,7 @@
-import Img from "react-cloudimage-responsive";
+import Image from "next/image";
 
 export const Sessions = () => (
-  <section id="sessions">
+  <section id="sessions" className="bg-white">
     <div className="p-8 pt-10 flex flex-row flex-wrap lg:flex-row-reverse lg:p-0">
       <div className="bg-primary-50 bg-opacity-10 pb-5 lg:w-1/2 lg:p-5 lg:flex lg:flex-col lg:justify-center">
         <div className="lg:max-w-lg lg:pl-2">
@@ -23,11 +23,13 @@ export const Sessions = () => (
           </p>
         </div>
       </div>
-      <div className="h-52 md:h-80 w-full lg:w-1/2">
-        <Img
-          src="acupuntura_BIG.jpg"
-          params="func=crop&gravity=auto"
+      <div className="relative h-64 md:h-80 w-full lg:w-1/2">
+        <Image
+          src="/images/acupuntura_BIG.jpg"
           alt="Agujas de acupuntura"
+          layout="fill"
+          objectFit="cover"
+          className="rounded-md lg:rounded-none"
         />
       </div>
     </div>
@@ -57,11 +59,13 @@ export const Sessions = () => (
           </p>
         </div>
       </div>
-      <div className="h-52 md:h-80 w-full lg:w-1/2">
-        <Img
-          src="terapia-manual_BIG.jpg"
-          params="func=crop&gravity=auto"
+      <div className="relative h-52 md:h-80 w-full lg:w-1/2">
+        <Image
+          src="/images/terapia-manual_BIG.jpg"
           alt="Terapia manual"
+          layout="fill"
+          objectFit="cover"
+          className="rounded-md lg:rounded-none"
         />
       </div>
     </div>
