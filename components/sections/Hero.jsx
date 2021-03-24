@@ -17,6 +17,7 @@ export const Hero = () => (
         alt="Banner"
         layout="fill"
         objectFit="cover"
+        objectPosition="top"
         quality={100}
       />
     </div>
