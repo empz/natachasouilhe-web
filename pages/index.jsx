@@ -25,7 +25,9 @@ const Homepage = () => {
         </title>
         <meta
           name="description"
-          content="Fisioterapeuta especializada en Medicina Tradicional China. Palma de Mallorca, España."
+          content="Fisioterapeuta especializada en Medicina Tradicional China. Palma de Mallorca, España.
+          Tratamientos: Acupuntura, punción seca, terapia manual, masajes, ventosas, auriculoterapia, fitoterapia, moxibustión, kinesiotape.
+          Afecciones: insomnio, ansiedad y manejo del estres, enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, hormigueo y pérdida de sensación, tratamientos para fertilidad, terapia del dolor."
         />
         <link
           rel="apple-touch-icon"
@@ -100,6 +102,17 @@ const Homepage = () => {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff" />
+
+        <meta
+          property="og:title"
+          content="Natacha Souilhe: Fisioterapia y Medicina Tradicional China"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://natachasouilhe.com/" />
+        <meta
+          property="og:image"
+          content="https://ajplwsumyq.cloudimg.io/v7/https://natachasouilhe.com/images/acerca-de-mi.png?w=512"
+        />
 
         {/* Plausible Analytics */}
         {process.env.NODE_ENV === "production" && (
