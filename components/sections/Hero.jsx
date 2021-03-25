@@ -9,6 +9,7 @@ export const Hero = () => (
       }}
     >
       <Image
+        loading="eager"
         src="/images/hero_banner_web.png"
         alt="Banner"
         layout="fill"
