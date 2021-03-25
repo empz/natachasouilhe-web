@@ -3,12 +3,8 @@ import Image from "next/image";
 export const Hero = () => (
   <section id="home" className="pt-14 -mb-14">
     <div
-      className="bg-black bg-opacity-75"
+      className="bg-black bg-opacity-75 absolute h-screen w-full"
       style={{
-        position: "fixed",
-        height: "100vh",
-        width: "100vw",
-        overflow: "hidden",
         zIndex: -1,
       }}
     >

@@ -105,18 +105,35 @@ const Homepage = () => {
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://natachasouilhe.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Natacha Souilhe: Fisioterapia y Medicina Tradicional China" />
-        <meta property="og:description" content="Tratamientos para el insomnio, ansiedad, estrés, dolores y enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, fertilidad." />
-        <meta property="og:image" content="https://ajplwsumyq.cloudimg.io/v7/https://natachasouilhe.com/images/acerca-de-mi.png?w=512" />
+        <meta
+          property="og:title"
+          content="Natacha Souilhe: Fisioterapia y Medicina Tradicional China"
+        />
+        <meta
+          property="og:description"
+          content="Tratamientos para el insomnio, ansiedad, estrés, dolores y enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, fertilidad."
+        />
+        <meta
+          property="og:image"
+          content="https://natachasouilhe.com/images/acerca-de-mi.png"
+        />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="natachasouilhe.com" />
         <meta property="twitter:url" content="https://natachasouilhe.com/" />
-        <meta name="twitter:title" content="Natacha Souilhe: Fisioterapia y Medicina Tradicional China" />
-        <meta name="twitter:description" content="Tratamientos para el insomnio, ansiedad, estrés, dolores y enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, fertilidad." />
-        <meta name="twitter:image" content="https://ajplwsumyq.cloudimg.io/v7/https://natachasouilhe.com/images/acerca-de-mi.png?w=512" />
-
+        <meta
+          name="twitter:title"
+          content="Natacha Souilhe: Fisioterapia y Medicina Tradicional China"
+        />
+        <meta
+          name="twitter:description"
+          content="Tratamientos para el insomnio, ansiedad, estrés, dolores y enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, fertilidad."
+        />
+        <meta
+          name="twitter:image"
+          content="https://natachasouilhe.com/images/acerca-de-mi.png"
+        />
 
         {/* Plausible Analytics */}
         {process.env.NODE_ENV === "production" && (

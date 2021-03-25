@@ -9,6 +9,7 @@
     "start": "next start -p ${PORT:=3000}"
   },
   "dependencies": {
+    "@botpoison/browser": "^0.1.17",
     "@formspark/use-formspark": "^0.1.25",
     "next": "^10.0.5",
     "next-i18next": "^8.1.2",

@@ -1,14 +1,19 @@
 import { useState } from "react";
 import { useFormspark } from "@formspark/use-formspark";
+import Botpoison from "@botpoison/browser";
 
 const FORMSPARK_FORM_ID = process.env.NEXT_PUBLIC_FORMSPARK_FORM_ID;
+const botpoison = new Botpoison({
+  publicKey: process.env.NEXT_PUBLIC_BOTPOISON_KEY,
+});
 
 export const Contact = () => {
-  const [submit, submitting] = useFormspark({
+  const [submit] = useFormspark({
     formId: FORMSPARK_FORM_ID,
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,10 +21,18 @@ export const Contact = () => {
   const [message, setMessage] = useState("");
 
   const onSubmit = async (e) => {
+    setSubmitting(true);
     e.preventDefault();
-    await submit({ name, email, phone, message });
 
+    const { solution } = await botpoison.challenge();
+    await submit({ name, email, phone, message, _botpoison: solution });
+
+    setSubmitting(false);
     setSubmitted(true);
+    setName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
   };
 
   return (
