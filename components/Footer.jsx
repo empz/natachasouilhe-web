@@ -4,13 +4,13 @@ import { useTranslation } from "react-i18next";
 import sections from "../data/sections.json";
 
 export const Footer = () => {
-  const { t } = useTranslation("navbar");
+  const { t } = useTranslation("common");
 
   return (
     <footer className="bg-blue-900 py-11 px-5 text-white">
       <div className="flex flex-col space-y-5 lg:flex-row lg:justify-between lg:space-y-0 lg:pb-10">
         <div className="font-sans text-xl italic text-center lg:w-1/4">
-          "El éxito de la terapia es combinar lo mejor de los dos mundos"
+          {t('main-quote')}
           <img
             src="images/logo_simple.png"
             alt="Logo simple"
@@ -42,7 +42,7 @@ export const Footer = () => {
                 alt="Pin icon"
                 className="inline-block mr-2 align-bottom"
               />
-              Palma de Mallorca, España
+              {t('location')}
             </li>
             <li>
               <img
@@ -101,7 +101,7 @@ export const Footer = () => {
       </div>
       <hr className="opacity-30 mb-5" />
       <div className="font-sans text-center text-bluegray-100">
-        © 2021. Natacha Souilhe. Todos los derechos reservados.
+        © 2021. Natacha Souilhe. {t('all-rights-reserved')}
       </div>
     </footer>
   );

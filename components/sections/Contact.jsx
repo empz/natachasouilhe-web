@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useFormspark } from "@formspark/use-formspark";
 import Botpoison from "@botpoison/browser";
+import { useTranslation } from "react-i18next";
 
 const FORMSPARK_FORM_ID = process.env.NEXT_PUBLIC_FORMSPARK_FORM_ID;
 const botpoison = new Botpoison({
@@ -11,6 +12,8 @@ export const Contact = () => {
   const [submit] = useFormspark({
     formId: FORMSPARK_FORM_ID,
   });
+
+  const { t } = useTranslation("common");
 
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -42,8 +45,7 @@ export const Contact = () => {
           <h2 className="text-primary-800 text-3xl font-bold">Contacto</h2>
 
           <p className="font-sans text-xl font-semibold text-primary-600 mt-5">
-            ¿Tienes una consulta? Escríbeme y me pondré en contacto a la
-            brevedad.
+            {t("contact-quote")}
           </p>
 
           <form
@@ -59,7 +61,7 @@ export const Contact = () => {
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Nombre"
+                placeholder={t("name")}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
@@ -73,7 +75,7 @@ export const Contact = () => {
                 type="text"
                 name="email"
                 id="email"
-                placeholder="Correo electrónico"
+                placeholder={t("email")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -87,7 +89,7 @@ export const Contact = () => {
                 type="text"
                 name="phone"
                 id="phone"
-                placeholder="Teléfono"
+                placeholder={t("phone")}
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               />
@@ -102,7 +104,7 @@ export const Contact = () => {
                 type="text"
                 name="message"
                 id="message"
-                placeholder="Mensaje"
+                placeholder={t("message")}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required
@@ -116,10 +118,10 @@ export const Contact = () => {
                 disabled={submitting || submitted}
               >
                 {submitting
-                  ? "Enviando..."
+                  ? t("sending")
                   : submitted
-                  ? "¡Gracias!"
-                  : "Enviar"}
+                  ? t("thankyou")
+                  : t("send")}
               </button>
             </div>
           </form>

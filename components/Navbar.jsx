@@ -4,7 +4,7 @@ import { useToggle } from "../hooks/use-toggle";
 import sections from "../data/sections.json";
 
 export const Navbar = () => {
-  const { t } = useTranslation("navbar");
+  const { t } = useTranslation("common");
 
   const [mobileMenuExpanded, toggleMobileMenuExpanded] = useToggle();
 

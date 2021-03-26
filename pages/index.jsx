@@ -20,13 +20,8 @@ const Homepage = () => {
   return (
     <>
       <Head>
-        <title>
-          Natacha Souilhe: Fisioterapia y Medicina Tradicional China
-        </title>
-        <meta
-          name="description"
-          content="Tratamientos para el insomnio, ansiedad, estrés, dolores y enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, fertilidad."
-        />
+        <title>{t("index-title")}</title>
+        <meta name="description" content={t("index-description")} />
 
         <link
           rel="apple-touch-icon"
@@ -105,14 +100,8 @@ const Homepage = () => {
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://natachasouilhe.com/" />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Natacha Souilhe: Fisioterapia y Medicina Tradicional China"
-        />
-        <meta
-          property="og:description"
-          content="Tratamientos para el insomnio, ansiedad, estrés, dolores y enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, fertilidad."
-        />
+        <meta property="og-title" content={t("index-title")} />
+        <meta property="og-description" content={t("index-description")} />
         <meta
           property="og:image"
           content="https://natachasouilhe.com/images/acerca-de-mi.png"
@@ -122,14 +111,8 @@ const Homepage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="natachasouilhe.com" />
         <meta property="twitter:url" content="https://natachasouilhe.com/" />
-        <meta
-          name="twitter:title"
-          content="Natacha Souilhe: Fisioterapia y Medicina Tradicional China"
-        />
-        <meta
-          name="twitter:description"
-          content="Tratamientos para el insomnio, ansiedad, estrés, dolores y enfermedades crónicas, migraña, fibromialgia, lesiones deportivas, parálisis facial, fertilidad."
-        />
+        <meta name="twitter-title" content={t("index-title")} />
+        <meta name="twitter-description" content={t("index-description")} />
         <meta
           name="twitter:image"
           content="https://natachasouilhe.com/images/acerca-de-mi.png"
@@ -151,43 +134,43 @@ const Homepage = () => {
       <Sessions></Sessions>
       <Treatments>
         <Card
-          title="Acupuntura"
-          description="Técnica destinada a restablecer la bioelectricidad del cuerpo"
+          title={t("treatment-acupuntura-title")}
+          description={t("treatment-acupuntura-description")}
           imageUrl="/images/treatments/acupuntura.jpg"
         />
         <Card
-          title="Punción seca"
-          description="Método destinado a la desactivación de puntos gatillo miofasciales"
+          title={t("treatment-puncion-title")}
+          description={t("treatment-puncion-description")}
           imageUrl="/images/treatments/puncion-seca.jpg"
         />
         <Card
-          title="Terapia manual"
-          description="Masajes y técnicas utilizadas para disfunciones neuro-músculo-esqueléticas"
+          title={t("treatment-manual-title")}
+          description={t("treatment-manual-description")}
           imageUrl="/images/treatments/terapia-manual.jpg"
         />
         <Card
-          title="Ventosas"
-          description="Técnica orientada a la liberación miofascial"
+          title={t("treatment-ventosas-title")}
+          description={t("treatment-ventosas-description")}
           imageUrl="/images/treatments/ventosas.jpg"
         />
         <Card
-          title="Auriculoterapia"
-          description='Tratamiento global desde una zona refleja "la oreja"'
+          title={t("treatment-auriculoterapia-title")}
+          description={t("treatment-auriculoterapia-description")}
           imageUrl="/images/treatments/auriculoterapia.jpg"
         />
         <Card
-          title="Fitoterapia"
-          description="Ciencia que estudia la utilización de productos de origen vegetal con finalidad terapéutica"
+          title={t("treatment-fitoterapia-title")}
+          description={t("treatment-fitoterapia-description")}
           imageUrl="/images/treatments/fitoterapia.jpg"
         />
         <Card
-          title="Moxibustión"
-          description="Método terapéutico de la medicina tradicional china que consiste en aplicar calor en puntos acupunturales"
+          title={t("treatment-moxibustion-title")}
+          description={t("treatment-moxibustion-description")}
           imageUrl="/images/treatments/moxibustion.jpg"
         />
         <Card
-          title="Kinesiotape"
-          description="Técnica que aporta estabilidad dinámica al sistema mio-articular"
+          title={t("treatment-kinesiotape-title")}
+          description={t("treatment-kinesiotape-description")}
           imageUrl="/images/treatments/kinesiotape.jpg"
         />
       </Treatments>
@@ -202,7 +185,7 @@ const Homepage = () => {
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale, ["common", "footer", "navbar"])),
+    ...(await serverSideTranslations(locale, ["common"])),
   },
 });
 
