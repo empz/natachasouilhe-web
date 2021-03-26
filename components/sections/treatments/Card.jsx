@@ -23,6 +23,7 @@ export const Card = ({ title, description, imageUrl }) => {
             }}
           >
             <Image
+              loading="eager"
               src={imageUrl}
               alt={title}
               width="375px"

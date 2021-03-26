@@ -38,16 +38,11 @@ export const Footer = () => {
           <ul className="tracking-wider space-y-5 text-center">
             <li>
               <img
-                src="images/email_icon.svg"
-                alt="Email icon"
+                src="images/pin.svg"
+                alt="Pin icon"
                 className="inline-block mr-2 align-bottom"
               />
-              <a
-                className="hover:underline"
-                href="mailto:hola@natachasouilhe.com"
-              >
-                hola@natachasouilhe.com
-              </a>
+              Palma de Mallorca, España
             </li>
             <li>
               <img
@@ -62,6 +57,19 @@ export const Footer = () => {
                 href="https://wa.me/+34648903162"
               >
                 +34 648 903 162
+              </a>
+            </li>
+            <li>
+              <img
+                src="images/email_icon.svg"
+                alt="Email icon"
+                className="inline-block mr-2 align-bottom"
+              />
+              <a
+                className="hover:underline"
+                href="mailto:hola@natachasouilhe.com"
+              >
+                hola@natachasouilhe.com
               </a>
             </li>
             <li className="space-x-4">

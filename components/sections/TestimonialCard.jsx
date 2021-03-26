@@ -10,6 +10,7 @@ export const TestimonialCard = ({ pictureUrl, name, children }) => {
           rounded-full w-24 h-24 border-white border-4`}
       >
         <Image
+          loading="eager"
           src={pictureUrl}
           alt={`Photo of ${name}`}
           width="88px"

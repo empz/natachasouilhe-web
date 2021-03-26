@@ -21,6 +21,7 @@ export const AboutMe = () => (
       </div>
       <div className="flex-1 text-center w-9/12 mx-auto flex flex-col items-end md:ml-10 md:self-end">
         <Image
+          loading="eager"
           src="/images/acerca-de-mi.png"
           alt="Natacha Souilhe picture"
           quality="85"

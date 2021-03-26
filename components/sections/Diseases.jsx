@@ -8,10 +8,11 @@ export const Diseases = () => (
         position: "absolute",
         height: "100%",
         width: "100%",
-        zIndex: "1"
+        zIndex: "1",
       }}
     >
       <Image
+        loading="eager"
         src="/images/afecciones-background_treated_02.jpg"
         alt="Banner"
         layout="fill"

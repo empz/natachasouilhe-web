@@ -25,6 +25,7 @@ export const Sessions = () => (
       </div>
       <div className="relative h-64 md:h-80 w-full lg:w-1/2">
         <Image
+          loading="eager"
           src="/images/acupuntura_BIG.jpg"
           alt="Agujas de acupuntura"
           layout="fill"
@@ -61,6 +62,7 @@ export const Sessions = () => (
       </div>
       <div className="relative h-52 md:h-80 w-full lg:w-1/2">
         <Image
+          loading="eager"
           src="/images/terapia-manual_BIG.jpg"
           alt="Terapia manual"
           layout="fill"
