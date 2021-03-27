@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 import { useToggle } from "../hooks/use-toggle";
 import sections from "../data/sections.json";
+import { LanguageSelector } from "./common/LanguageSelector";
 
 export const Navbar = () => {
   const { t } = useTranslation("common");
@@ -48,8 +49,8 @@ export const Navbar = () => {
         <ul
           className={`${
             mobileMenuExpanded ? "block" : "hidden"
-          } justify-items-stretch justify-end mx-auto text-center tracking-wider
-            xl:flex xl:flex-row`}
+          } justify-items-stretch justify-end mx-auto text-center tracking-wider w-full
+            xl:flex xl:flex-row xl:items-center xl:h-11`}
         >
           {sections.map((link) => (
             <li key={link} className="p-2">
@@ -68,6 +69,20 @@ export const Navbar = () => {
               </Link>
             </li>
           ))}
+          <li className="p-2">
+            <LanguageSelector
+              languages={[
+                {
+                  key: "en",
+                  caption: "English",
+                },
+                {
+                  key: "es",
+                  caption: "Español",
+                },
+              ]}
+            />
+          </li>
         </ul>
       </nav>
     </div>

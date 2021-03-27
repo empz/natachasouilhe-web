@@ -42,7 +42,7 @@ export const Contact = () => {
     <section id="contact" className="bg-white">
       <div style={{ background: "rgba(141, 136, 94, 0.08)" }}>
         <div className="text-center max-w-screen-xl mx-auto py-16 px-5 md:px-10">
-          <h2 className="text-primary-800 text-3xl font-bold">Contacto</h2>
+          <h2 className="text-primary-800 text-3xl font-bold">{t('contact')}</h2>
 
           <p className="font-sans text-xl font-semibold text-primary-600 mt-5">
             {t("contact-quote")}

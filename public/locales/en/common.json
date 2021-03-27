@@ -1,6 +1,6 @@
 {
   "home": "Home",
-  "about": "About",
+  "about": "About me",
   "sessions": "Sessions",
   "treatments": "Treatments",
   "diseases": "Diseases",
@@ -14,7 +14,7 @@
   "treatment-manual-title": "Manual therapy",
   "treatment-ventosas-title": "Vacuum therapy",
   "treatment-auriculoterapia-title": "Auriculotherapy",
-  "treatment-fitoterapia-title": "Phytotherapy",
+  "treatment-naturopatia-title": "Naturopathy",
   "treatment-moxibustion-title": "Moxibustion",
   "treatment-kinesiotape-title": "Kinesio tape",
   "treatment-acupuntura-description": "Technique designed to restore the body's bioelectricity",
@@ -22,7 +22,7 @@
   "treatment-manual-description": "Massages and techniques used for neuro-musculoskeletal dysfunctions",
   "treatment-ventosas-description": "Technique oriented to myofascial release",
   "treatment-auriculoterapia-description": "Form of alternative medicine based on the idea that the ear is a micro system, which reflects the entire body",
-  "treatment-fitoterapia-description": "Science that studies the use of plant-based products for therapeutic purposes",
+  "treatment-naturopatia-description": "Science that studies the use of plant-based products for therapeutic purposes",
   "treatment-moxibustion-description": "Therapeutic method of traditional Chinese medicine that consists of applying heat to acupuncture points",
   "treatment-kinesiotape-description": "Technique that provides dynamic stability to the myo-articular system",
   "main-quote": "Successful therapy is combining the best of both worlds",
@@ -66,5 +66,6 @@
   "que-esperar-3": "The sessions will range between 60' and 90'. We will work on meridians and trigger points. We will address the fascia with manual therapy and deep massages. No mechanical physiotherapy device will be used in the sessions.",
   "testomonio-1": "Excellent professional. Ms. Souilhe treated me on several occasions. She managed to heal the chronic sprains that I had in both ankles, due to soccer injuries. I also had a few acupuncture sessions, which gave incredible results.",
   "testimonio-2": "I visited the physiotherapist because I had back pain. She applied various physiotherapy techniques, massages, etc. And after a couple of sessions I began to see rapid improvement. I have gone back to my normal life and training.",
-  "testimonio-3": "Very professional, nice, with a lot of patience. She is very focused on the needs and well-being of the patient. She has a lot of knowledge, experience and although it may not seem like it, she has a lot of strength with old contractures. It is very useful!"
+  "testimonio-3": "Very professional, nice, with a lot of patience. She is very focused on the needs and well-being of the patient. She has a lot of knowledge, experience and although it may not seem like it, she has a lot of strength with old contractures. It is very useful!",
+  "contact-email": "hello@natachasouilhe.com"
 }

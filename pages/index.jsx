@@ -159,8 +159,8 @@ const Homepage = () => {
           imageUrl="/images/treatments/auriculoterapia.jpg"
         />
         <Card
-          title={t("treatment-fitoterapia-title")}
-          description={t("treatment-fitoterapia-description")}
+          title={t("treatment-naturopatia-title")}
+          description={t("treatment-naturopatia-description")}
           imageUrl="/images/treatments/fitoterapia.jpg"
         />
         <Card

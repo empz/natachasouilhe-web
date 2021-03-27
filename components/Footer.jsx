@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer className="bg-blue-900 py-11 px-5 text-white">
       <div className="flex flex-col space-y-5 lg:flex-row lg:justify-between lg:space-y-0 lg:pb-10">
         <div className="font-sans text-xl italic text-center lg:w-1/4">
-          {t('main-quote')}
+          {t("main-quote")}
           <img
             src="images/logo_simple.png"
             alt="Logo simple"
@@ -42,7 +42,7 @@ export const Footer = () => {
                 alt="Pin icon"
                 className="inline-block mr-2 align-bottom"
               />
-              {t('location')}
+              {t("location")}
             </li>
             <li>
               <img
@@ -67,9 +67,9 @@ export const Footer = () => {
               />
               <a
                 className="hover:underline"
-                href="mailto:hola@natachasouilhe.com"
+                href={`mailto:${t("contact-email")}`}
               >
-                hola@natachasouilhe.com
+                {t("contact-email")}
               </a>
             </li>
             <li className="space-x-4">
@@ -101,7 +101,7 @@ export const Footer = () => {
       </div>
       <hr className="opacity-30 mb-5" />
       <div className="font-sans text-center text-bluegray-100">
-        © 2021. Natacha Souilhe. {t('all-rights-reserved')}
+        © 2021. Natacha Souilhe. {t("all-rights-reserved")}
       </div>
     </footer>
   );
