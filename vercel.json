@@ -1,11 +1,4 @@
 {
-  "redirects": [
-    { "source": "/cita", "destination": "https://calendly.com/natachasouilhe" },
-    {
-      "source": "/schedule",
-      "destination": "https://calendly.com/natachasouilhe"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*).(jpe?g|png|ico|webp|svg|xml|ttf|woff2?)",
