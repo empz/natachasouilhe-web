@@ -24,6 +24,17 @@ const Homepage = () => {
         <meta name="description" content={t("index-description")} />
 
         <link
+          rel="alternate"
+          hreflang="en"
+          href="https://natachasouilhe.com/en"
+        />
+        <link
+          rel="alternate"
+          hreflang="es"
+          href="https://natachasouilhe.com/es"
+        />
+
+        <link
           rel="apple-touch-icon"
           sizes="57x57"
           href="/apple-icon-57x57.png"
