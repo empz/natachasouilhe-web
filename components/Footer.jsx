@@ -1,6 +1,12 @@
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaLinkedin,
+} from "react-icons/fa";
+
 import sections from "../data/sections.json";
 
 export const Footer = () => {
@@ -74,26 +80,34 @@ export const Footer = () => {
             </li>
             <li className="space-x-4">
               <a
+                className="inline-block"
+                target="_blank"
+                rel="noopener"
+                href="https://facebook.com/natachasouilhe"
+              >
+                <FaFacebookSquare
+                  size="2rem"
+                  className="transform hover:scale-110"
+                />
+              </a>
+              <a
+                className="inline-block"
                 target="_blank"
                 rel="noopener"
                 href="https://instagram.com/natachasouilhe"
               >
-                <img
-                  className="inline-block transform hover:scale-110"
-                  src="images/instagram_icon.svg"
-                  alt="Instagram icon"
+                <FaInstagramSquare
+                  size="2rem"
+                  className="transform hover:scale-110"
                 />
               </a>
               <a
+                className="inline-block"
                 target="_blank"
                 rel="noopener"
                 href="https://www.linkedin.com/in/natacha-souilhe"
               >
-                <img
-                  className="inline-block transform hover:scale-110"
-                  src="images/linkedin_icon.svg"
-                  alt="LinkedIn icon"
-                />
+                <FaLinkedin size="2rem" className="transform hover:scale-110" />
               </a>
             </li>
           </ul>
