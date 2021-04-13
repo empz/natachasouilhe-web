@@ -117,8 +117,8 @@ const Homepage = () => {
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://natachasouilhe.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og-title" content={t("index-title")} />
-        <meta property="og-description" content={t("index-description")} />
+        <meta property="og:title" content={t("index-title")} />
+        <meta property="og:description" content={t("index-description")} />
         <meta
           property="og:image"
           content="https://natachasouilhe.com/images/acerca-de-mi.png"
@@ -128,8 +128,8 @@ const Homepage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="natachasouilhe.com" />
         <meta property="twitter:url" content="https://natachasouilhe.com/" />
-        <meta name="twitter-title" content={t("index-title")} />
-        <meta name="twitter-description" content={t("index-description")} />
+        <meta name="twitter:title" content={t("index-title")} />
+        <meta name="twitter:description" content={t("index-description")} />
         <meta
           name="twitter:image"
           content="https://natachasouilhe.com/images/acerca-de-mi.png"
