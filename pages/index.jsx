@@ -24,7 +24,7 @@ const Homepage = () => {
         <meta name="description" content={t("index-description")} />
 
         <link
-          rel="alternate"
+          rel="canonical"
           hreflang="en"
           href="https://natachasouilhe.com/en"
         />
