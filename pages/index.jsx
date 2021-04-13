@@ -25,19 +25,19 @@ const Homepage = () => {
 
         <link
           rel="alternate"
-          hreflang="en"
+          hrefLang="en"
           href="https://natachasouilhe.com/en"
         />
         <link
           rel="alternate"
-          hreflang="es"
+          hrefLang="es"
           href="https://natachasouilhe.com/es"
         />
 
         <link
           rel="canonical"
+          hrefLang="x-default"
           href="https://natachasouilhe.com/"
-          hreflang="x-default"
         />
 
         <link

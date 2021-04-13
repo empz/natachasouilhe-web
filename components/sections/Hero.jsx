@@ -47,10 +47,23 @@ export const Hero = () => {
         <div className="self-center m-auto text-white px-3">
           <div className="text-3xl md:text-5xl tracking-wide">{quote}</div>
 
-          <div className="flex flex-col flex-wrap justify-center text-center font-sans mt-7 text-base tracking-widest sm:flex-row sm:text-lg">
-            <p>{t("diagnostico-occidental")}</p>
+          <h1 className="flex flex-col flex-wrap justify-center text-center font-sans mt-10 text-xl tracking-widest sm:flex-row sm:text-2xl">
+            <p>{t("hero-title")}</p>
             <p className="hidden px-3 sm:block">•</p>
-            <p>{t("tratamientos-milenarios")}</p>
+            <p>Palma de Mallorca</p>
+          </h1>
+
+          <div className="mt-16">
+            <a
+              target="_blank"
+              rel="noopener"
+              className="bg-primary-500 rounded-lg w-full p-4 text-2xl px-10
+                tracking-wider shadow-2xl text-white font-sans font-bold shaodw-lg
+                hover:bg-primary-600 focus:outline-none active:bg-primary-700"
+              href={t("hero-call-to-action-link")}
+            >
+              {t("hero-call-to-action")}
+            </a>
           </div>
         </div>
       </div>
