@@ -35,7 +35,7 @@ const Homepage = () => {
         />
 
         <link
-          rel="canonical"
+          rel="alternate"
           hrefLang="x-default"
           href="https://natachasouilhe.com/"
         />
