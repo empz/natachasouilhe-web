@@ -13,12 +13,13 @@ import { Diseases } from "../components/sections/Diseases";
 import { Testimonials } from "../components/sections/Testimonials";
 import { FAQ } from "../components/sections/FAQ";
 import { Contact } from "../components/sections/Contact";
+import PlausibleProvider from "next-plausible";
 
 const Homepage = () => {
   const { t } = useTranslation("common");
 
   return (
-    <>
+    <PlausibleProvider domain="natachasouilhe.com" trackOutboundLinks={true}>
       <Head>
         <title>{t("index-title")}</title>
         <meta name="description" content={t("index-description")} />
@@ -134,16 +135,6 @@ const Homepage = () => {
           name="twitter:image"
           content="https://natachasouilhe.com/images/acerca-de-mi.png"
         />
-
-        {/* Plausible Analytics */}
-        {process.env.NODE_ENV === "production" && (
-          <script
-            async
-            defer
-            data-domain="natachasouilhe.com"
-            src="https://plausible.io/js/plausible.outbound-links.js"
-          ></script>
-        )}
       </Head>
       <Navbar></Navbar>
       <Hero></Hero>
@@ -196,7 +187,7 @@ const Homepage = () => {
       <FAQ />
       <Contact />
       <Footer />
-    </>
+    </PlausibleProvider>
   );
 };
 

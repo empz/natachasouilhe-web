@@ -1,10 +1,14 @@
 import { useRouter } from "next/dist/client/router";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import { PopupText } from "react-calendly";
+import { usePlausible } from "next-plausible";
 
 export const Hero = () => {
   const { t } = useTranslation("common");
   const { locale } = useRouter();
+
+  const plausible = usePlausible();
 
   const quote =
     locale === "en" ? (
@@ -54,16 +58,26 @@ export const Hero = () => {
           </h1>
 
           <div className="mt-16">
-            <a
-              target="_blank"
-              rel="noopener"
+            <span
+              onClick={() => {
+                plausible("bookButtonClicked", {
+                  props: {
+                    locale: locale,
+                  },
+                });
+              }}
               className="bg-primary-500 rounded-lg w-full p-4 text-2xl px-10
                 tracking-wider shadow-2xl text-white font-sans font-bold shaodw-lg
                 hover:bg-primary-600 focus:outline-none active:bg-primary-700"
-              href={t("hero-call-to-action-link")}
             >
-              {t("hero-call-to-action")}
-            </a>
+              <PopupText
+                url={t("hero-call-to-action-link")}
+                text={t("hero-call-to-action")}
+                pageSettings={{
+                  hideLandingPageDetails: true,
+                }}
+              />
+            </span>
           </div>
         </div>
       </div>
