@@ -1,7 +1,7 @@
 import { useRouter } from "next/dist/client/router";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import { PopupText } from "react-calendly";
+import { openPopupWidget, CalendlyEventListener } from "react-calendly";
 import { usePlausible } from "next-plausible";
 
 export const Hero = () => {
@@ -9,6 +9,19 @@ export const Hero = () => {
   const { locale } = useRouter();
 
   const plausible = usePlausible();
+
+  const handleBookButtonClick = () => {
+    openPopupWidget({
+      url: t("hero-call-to-action-link"),
+      utm: { utmSource: "website" },
+    });
+
+    plausible("bookButtonClicked", {
+      props: {
+        locale: locale,
+      },
+    });
+  };
 
   const quote =
     locale === "en" ? (
@@ -57,28 +70,30 @@ export const Hero = () => {
             <p>Palma de Mallorca</p>
           </h1>
 
-          <div className="mt-16">
-            <span
-              onClick={() => {
-                plausible("bookButtonClicked", {
-                  props: {
-                    locale: locale,
-                  },
-                });
-              }}
-              className="bg-primary-500 rounded-lg w-full p-4 text-2xl px-10
+          <CalendlyEventListener
+            onDateAndTimeSelected={() => {
+              console.log("dateTime");
+            }}
+            onEventScheduled={(e) => {
+              plausible("eventScheduled", {
+                props: {
+                  locale: locale,
+                  event: e.payload.url,
+                },
+              });
+            }}
+          >
+            <div className="mt-16">
+              <button
+                onClick={handleBookButtonClick}
+                className="bg-primary-500 rounded-lg p-4 text-2xl px-10
                 tracking-wider shadow-2xl text-white font-sans font-bold shaodw-lg
                 hover:bg-primary-600 focus:outline-none active:bg-primary-700"
-            >
-              <PopupText
-                url={t("hero-call-to-action-link")}
-                text={t("hero-call-to-action")}
-                pageSettings={{
-                  hideLandingPageDetails: true,
-                }}
-              />
-            </span>
-          </div>
+              >
+                {t("hero-call-to-action")}
+              </button>
+            </div>
+          </CalendlyEventListener>
         </div>
       </div>
     </section>
