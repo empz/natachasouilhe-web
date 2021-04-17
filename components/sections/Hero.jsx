@@ -71,14 +71,22 @@ export const Hero = () => {
           </h1>
 
           <CalendlyEventListener
-            onDateAndTimeSelected={() => {
-              console.log("dateTime");
-            }}
-            onEventScheduled={(e) => {
-              plausible("eventScheduled", {
+            onDateAndTimeSelected={(e) => {
+              // console.log(e);
+
+              plausible("calendlyDateSelected", {
                 props: {
                   locale: locale,
-                  event: e.payload.url,
+                },
+              });
+            }}
+            onEventScheduled={(e) => {
+              // console.log(e);
+
+              plausible("calendlyEventScheduled", {
+                props: {
+                  locale: locale,
+                  event: e.data.event.uri,
                 },
               });
             }}
