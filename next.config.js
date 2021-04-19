@@ -14,6 +14,16 @@ module.exports = {
         destination: "https://calendly.com/natachasouilhe",
         permanent: true,
       },
+      {
+        source: "/primera-cita",
+        destination: "https://calendly.com/natachasouilhe/primera-cita",
+        permanent: true,
+      },
+      {
+        source: "/first-appointment",
+        destination: "https://calendly.com/natachasouilhe/first-appointment",
+        permanent: true,
+      },
     ];
   },
 };
