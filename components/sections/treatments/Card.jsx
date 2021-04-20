@@ -38,9 +38,9 @@ export const Card = ({ title, description, imageUrl }) => {
             }}
           >
             <div className="mt-auto mb-6">
-              <div className="mx-auto font-bold text-white text-lg tracking-widest">
+              <h3 className="mx-auto font-bold text-white text-lg tracking-widest">
                 {title}
-              </div>
+              </h3>
               <img
                 className="mx-auto mt-3"
                 src="images/arrow-down.svg"
@@ -51,9 +51,9 @@ export const Card = ({ title, description, imageUrl }) => {
         </div>
 
         <div className="shadow bg-primary-500 flex flex-col justify-between p-6 items-center mt-auto h-48 rounded-lg text-white ">
-          <div className="mx-auto font-bold text-white text-lg tracking-widest">
+          <p className="block mx-auto font-bold text-white text-lg tracking-widest">
             {title}
-          </div>
+          </p>
           <div className="font-sans">{description}</div>
           <div className="mx-auto">
             <img src="images/arrow-up.svg" alt="Arrow up" />
