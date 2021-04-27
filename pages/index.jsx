@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
@@ -17,6 +18,7 @@ import PlausibleProvider from "next-plausible";
 
 const Homepage = () => {
   const { t } = useTranslation("common");
+  const { locale } = useRouter();
 
   return (
     <PlausibleProvider domain="natachasouilhe.com" trackOutboundLinks={true}>
@@ -25,21 +27,30 @@ const Homepage = () => {
         <meta name="description" content={t("index-description")} />
 
         <link
-          rel="canonical"
+          rel="alternate"
           hrefLang="en"
           href="https://natachasouilhe.com/en"
         />
+
         <link
-          rel="canonical"
+          rel="alternate"
           hrefLang="es"
           href="https://natachasouilhe.com/es"
         />
 
         <link
           rel="alternate"
-          hrefLang="x-default"
-          href="https://natachasouilhe.com/"
+          hreflang="x-default"
+          href="https://natachasouilhe.com"
         />
+
+        {locale.toLowerCase() === "es" && (
+          <link rel="canonical" href="https://natachasouilhe.com/es" />
+        )}
+
+        {locale.toLowerCase() === "en" && (
+          <link rel="canonical" href="https://natachasouilhe.com/en" />
+        )}
 
         <link
           rel="apple-touch-icon"
