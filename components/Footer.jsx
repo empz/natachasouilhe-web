@@ -60,9 +60,9 @@ export const Footer = () => {
                 className="hover:underline"
                 target="_blank"
                 rel="noopener"
-                href="https://wa.me/+34648903162"
+                href="https://wa.me/+34683242526"
               >
-                +34 648 903 162
+                +34 683 24 25 26
               </a>
             </li>
             <li>
