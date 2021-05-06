@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 import { openPopupWidget, CalendlyEventListener } from "react-calendly";
 import { usePlausible } from "next-plausible";
 
+import * as ga from "lib/ga";
+
 export const Hero = () => {
   const { t } = useTranslation("common");
   const { locale } = useRouter();
@@ -19,6 +21,14 @@ export const Hero = () => {
     plausible("bookButtonClicked", {
       props: {
         locale: locale,
+      },
+    });
+
+    ga.event({
+      action: "book_button_clicked",
+      params: {
+        category: "booking",
+        label: "Book button was clicked",
       },
     });
   };
@@ -79,6 +89,14 @@ export const Hero = () => {
                   locale: locale,
                 },
               });
+
+              ga.event({
+                action: "calendly_date_selected",
+                params: {
+                  category: "booking",
+                  label: "Date was selected",
+                },
+              });
             }}
             onEventScheduled={(e) => {
               // console.log(e);
@@ -87,6 +105,14 @@ export const Hero = () => {
                 props: {
                   locale: locale,
                   event: e.data.event.uri,
+                },
+              });
+
+              ga.event({
+                action: "calendly_event_scheduled",
+                params: {
+                  category: "booking",
+                  label: "A booking was scheduled",
                 },
               });
             }}
