@@ -24,13 +24,13 @@ export const Hero = () => {
       },
     });
 
-    ga.event({
-      action: "book_button_clicked",
-      params: {
-        category: "booking",
-        label: "Book button was clicked",
-      },
-    });
+    // ga.event({
+    //   action: "book_button_clicked",
+    //   params: {
+    //     category: "booking",
+    //     label: "Book button was clicked",
+    //   },
+    // });
   };
 
   const quote =
@@ -90,13 +90,13 @@ export const Hero = () => {
                 },
               });
 
-              ga.event({
-                action: "calendly_date_selected",
-                params: {
-                  category: "booking",
-                  label: "Date was selected",
-                },
-              });
+              // ga.event({
+              //   action: "calendly_date_selected",
+              //   params: {
+              //     category: "booking",
+              //     label: "Date was selected",
+              //   },
+              // });
             }}
             onEventScheduled={(e) => {
               // console.log(e);
@@ -108,13 +108,13 @@ export const Hero = () => {
                 },
               });
 
-              ga.event({
-                action: "calendly_event_scheduled",
-                params: {
-                  category: "booking",
-                  label: "A booking was scheduled",
-                },
-              });
+              // ga.event({
+              //   action: "calendly_event_scheduled",
+              //   params: {
+              //     category: "booking",
+              //     label: "A booking was scheduled",
+              //   },
+              // });
             }}
           >
             <div className="mt-16">

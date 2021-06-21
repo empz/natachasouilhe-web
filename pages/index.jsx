@@ -40,7 +40,7 @@ const Homepage = () => {
 
         <link
           rel="alternate"
-          hreflang="x-default"
+          hrefLang="x-default"
           href="https://natachasouilhe.com"
         />
 
