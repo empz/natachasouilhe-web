@@ -2,10 +2,11 @@ import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
 import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaLinkedin,
-} from "react-icons/fa";
+  AiFillGoogleSquare,
+  AiFillLinkedin,
+  AiFillInstagram,
+  AiFillFacebook,
+} from "react-icons/ai";
 
 import sections from "../data/sections.json";
 
@@ -83,11 +84,22 @@ export const Footer = () => {
                 className="inline-block"
                 target="_blank"
                 rel="noopener"
+                href="https://g.page/r/CWSqyyvpKa4IEAE"
+              >
+                <AiFillGoogleSquare
+                  size="2rem"
+                  className="transform hover:scale-125"
+                />
+              </a>
+              <a
+                className="inline-block"
+                target="_blank"
+                rel="noopener"
                 href="https://facebook.com/natachasouilhe"
               >
-                <FaFacebookSquare
+                <AiFillFacebook
                   size="2rem"
-                  className="transform hover:scale-110"
+                  className="transform hover:scale-125"
                 />
               </a>
               <a
@@ -96,9 +108,9 @@ export const Footer = () => {
                 rel="noopener"
                 href="https://instagram.com/natachasouilhe"
               >
-                <FaInstagramSquare
+                <AiFillInstagram
                   size="2rem"
-                  className="transform hover:scale-110"
+                  className="transform hover:scale-125"
                 />
               </a>
               <a
@@ -107,7 +119,10 @@ export const Footer = () => {
                 rel="noopener"
                 href="https://www.linkedin.com/in/natacha-souilhe"
               >
-                <FaLinkedin size="2rem" className="transform hover:scale-110" />
+                <AiFillLinkedin
+                  size="2rem"
+                  className="transform hover:scale-125"
+                />
               </a>
             </li>
           </ul>
